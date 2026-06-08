@@ -21,7 +21,7 @@ def get_ticket_amount(tickets_left, max_per_buyer):
 
 def main():
     # Stores the assignment limits.
-    TOTAL_TICKETS = 20
+    TOTAL_TICKETS = 10
     MAX_PER_BUYER = 4
 
     # Counts tickets left and counts buyers.

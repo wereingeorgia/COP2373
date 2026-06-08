@@ -26,7 +26,7 @@ def main():
 
     # Counts tickets left and counts buyers.
     tickets_left = TOTAL_TICKETS
-    buyers = 0
+    total_buyers = 0
 
     # Keeps selling tickets until all are sold.
     while tickets_left > 0:
@@ -35,12 +35,12 @@ def main():
         # Update totals only when the purchase is valid.
         if tickets_bought > 0:
             tickets_left = tickets_left - tickets_bought
-            buyers = buyers + 1
+            total_buyers = total_buyers + 1
             print(f"Tickets remaining: {tickets_left}")
 
     # Displays the total number of buyers.
     print("All tickets have been sold.")
-    print(f"Total number of buyers: {buyers}")
+    print(f"Total number of buyers: {total_buyers}")
 
 
 # Starts the program.

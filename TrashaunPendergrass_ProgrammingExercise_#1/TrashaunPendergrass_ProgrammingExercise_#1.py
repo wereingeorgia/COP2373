@@ -8,7 +8,7 @@ def get_ticket_amount(tickets_left, max_per_buyer):
     max_tickets = min(max_per_buyer, tickets_left)
 
     # Gets the number of tickets the buyer wants.
-    tickets = int(input(f"Enter tickets to buy (max 4): "))
+    tickets = int(input(f"How many tickets to buy? (max 4): "))
 
     # Makes invalid purchases not count, have them retry.
     if tickets < 1 or tickets > max_tickets:

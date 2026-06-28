@@ -7,22 +7,6 @@
 import re
 
 # Checks if the phone number is valid, accepting formats with and without minus sign.
-
-''' 
-    Parameters:
-    phone_number(str) - phone number entered by user
-
-    Variables:
-    pattern (str) - regular expression pattern used to validate the phone number
-
-    Logic:
-    1. Receives the phone number from user
-    2. Checks if the phone number matches the pattern's permitted
-
-    Return:
-    True if it matches, False if it doesn't.
-'''
-
 def validate_phone(phone_number):
     # Regular expression pattern for phone number, accepting formats of ###-###-#### and ### ### ####.
     pattern = r'\d\d\d[ -]\d\d\d[ -]\d\d\d\d'
@@ -39,22 +23,6 @@ def validate_phone(phone_number):
         return False
 
 # Checks if the SSN is valid, accepting formats with and without minus sign.
-
-''' 
-    Parameters:
-    ssn(str) - social security number entered by user
-    
-    Variables:
-    pattern (str) - regular expression pattern used to validate the SSN
-    
-    Logic:
-    1. Receives the SSN from user
-    2. Checks if the SSN matches the pattern's permitted
-
-    Return:
-    True if it matches, False if it doesn't.
-'''
-
 def validate_ssn(ssn):
 
     # Regular expression pattern for SSN, accepting formats of ###-##-#### and ### ## ####.
@@ -72,22 +40,6 @@ def validate_ssn(ssn):
         return False
 
 # Checks if the zip code is valid, accepting only one format.
-
-''' 
-    Parameters:
-    zip_code(str) - zip code entered by user
-
-    Variables:
-    pattern (str) - regular expression pattern used to validate the zip code
-
-    Logic:
-    1. Receives the zip code from user
-    2. Checks if the zip code matches the pattern permitted
-
-    Return:
-    True if it matches, False if it doesn't.
-'''
-
 def validate_zip(zip_code):
     # Regular expression pattern for zip, only accepting format of #####.
     pattern = r'\d\d\d\d\d'
